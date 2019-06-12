@@ -26,7 +26,7 @@ $i = 0;
  */
 $i++;
 /* Authentication type */
-$cfg['Servers'][$i]['auth_type'] = 'config';
+$cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
 $cfg['Servers'][$i]['host'] = 'rafa-food-express.herokuapp.com';
 $cfg['Servers'][$i]['compress'] = false;
