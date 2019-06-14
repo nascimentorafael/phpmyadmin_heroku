@@ -29,6 +29,7 @@ $cfg['Servers'][$i]['host'] = 'rafa-food-express.herokuapp.com';
 $cfg['Servers'][$i]['user'] = 'admin';
 $cfg['Servers'][$i]['password'] = 'admin';
 $cfg['Servers'][$i]['compress'] = false;
+$cfg['Servers'][$i]['extension'] = 'mysqli';
 $cfg['Servers'][$i]['AllowNoPassword'] = true;
 /**
  * phpMyAdmin configuration storage settings.
