@@ -9,15 +9,18 @@
  *
  * @package PhpMyAdmin
  */
+
 /**
  * This is needed for cookie based authentication to encrypt password in
  * cookie. Needs to be 32 chars long.
  */
-$cfg['blowfish_secret'] = 'WTnebqBslUgw*v0tjsx7XK9uTdl_(&A%'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+$cfg['blowfish_secret'] = 'hsdfatwjksdtegwrdithdterwodgfswq'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+
 /**
  * Servers configuration
  */
 $i = 0;
+
 /**
  * First server
  */
@@ -26,19 +29,19 @@ $i++;
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
 $cfg['Servers'][$i]['host'] = 'rafa-food-express.herokuapp.com';
-$cfg['Servers'][$i]['user'] = 'admin';
-$cfg['Servers'][$i]['password'] = 'admin';
 $cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['AllowNoPassword'] = true;
+$cfg['Servers'][$i]['AllowNoPassword'] = false;
+
 /**
  * phpMyAdmin configuration storage settings.
  */
+
 /* User used to manipulate with storage */
 // $cfg['Servers'][$i]['controlhost'] = '';
 // $cfg['Servers'][$i]['controlport'] = '';
 // $cfg['Servers'][$i]['controluser'] = 'pma';
 // $cfg['Servers'][$i]['controlpass'] = 'pmapass';
+
 /* Storage database and tables */
 // $cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
 // $cfg['Servers'][$i]['bookmarktable'] = 'pma__bookmark';
@@ -60,26 +63,31 @@ $cfg['Servers'][$i]['AllowNoPassword'] = true;
 // $cfg['Servers'][$i]['central_columns'] = 'pma__central_columns';
 // $cfg['Servers'][$i]['designer_settings'] = 'pma__designer_settings';
 // $cfg['Servers'][$i]['export_templates'] = 'pma__export_templates';
+
 /**
  * End of servers configuration
  */
+
 /**
  * Directories for saving/loading files from server
  */
 $cfg['UploadDir'] = '';
 $cfg['SaveDir'] = '';
+
 /**
  * Whether to display icons or text or both icons and text in table row
  * action segment. Value can be either of 'icons', 'text' or 'both'.
  * default = 'both'
  */
 //$cfg['RowActionType'] = 'icons';
+
 /**
  * Defines whether a user should be displayed a "show all (records)"
  * button in browse mode or not.
  * default = false
  */
 //$cfg['ShowAll'] = true;
+
 /**
  * Number of rows displayed when browsing a result set. If the result
  * set contains more rows, "Previous" and "Next".
@@ -87,6 +95,7 @@ $cfg['SaveDir'] = '';
  * default = 25
  */
 //$cfg['MaxRows'] = 50;
+
 /**
  * Disallow editing of binary fields
  * valid values are:
@@ -97,6 +106,7 @@ $cfg['SaveDir'] = '';
  * default = 'blob'
  */
 //$cfg['ProtectBinary'] = false;
+
 /**
  * Default language to use, if not browser-defined or user-defined
  * (you find all languages in the locale folder)
@@ -105,12 +115,14 @@ $cfg['SaveDir'] = '';
  */
 //$cfg['DefaultLang'] = 'en';
 //$cfg['DefaultLang'] = 'de';
+
 /**
  * How many columns should be used for table display of a database?
  * (a value larger than 1 results in some information being hidden)
  * default = 1
  */
 //$cfg['PropertiesNumColumns'] = 2;
+
 /**
  * Set to true if you want DB-based query history.If false, this utilizes
  * JS-routines to display query history (lost by window close)
@@ -119,11 +131,13 @@ $cfg['SaveDir'] = '';
  * default = false
  */
 //$cfg['QueryHistoryDB'] = true;
+
 /**
  * When using DB-based query history, how many entries should be kept?
  * default = 25
  */
 //$cfg['QueryHistoryMax'] = 100;
+
 /**
  * Whether or not to query the user before sending the error report to
  * the phpMyAdmin team when a JavaScript error occurs
@@ -133,6 +147,7 @@ $cfg['SaveDir'] = '';
  * default = 'ask'
  */
 //$cfg['SendErrorReports'] = 'always';
+
 /**
  * You can find more configuration options in the documentation
  * in the doc/ folder or at <https://docs.phpmyadmin.net/>.
