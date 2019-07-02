@@ -26,11 +26,13 @@ $i = 0;
  */
 $i++;
 /* Authentication type */
-$cfg['Servers'][$i]['auth_type'] = 'cookie';
+$cfg['Servers'][$i]['auth_type'] = 'config';
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = 'rafa-food-express.herokuapp.com';
+$cfg['Servers'][$i]['host'] = 'rafael-express-food.herokuapp.com';
+$cfg['Servers'][$i]['user'] = 'admin';
+$cfg['Servers'][$i]['password'] = 'admin';
 $cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
+$cfg['Servers'][$i]['AllowNoPassword'] = true;
 
 /**
  * phpMyAdmin configuration storage settings.
